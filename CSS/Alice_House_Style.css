@@ -1,0 +1,385 @@
+html {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+body {
+	font-family: 'Libre',  sans-serif;
+	font-size: 13px;
+    background-image: url("../Images/bg2.jpeg");
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+
+/*Custom Fonts*/
+
+@font-face {
+    font-family:'Amatic';
+    src: url("fonts/Amatic-Bold.ttf") format('truetype');
+    font-weight:bold;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Reey';
+    src: url("fonts/Reey-Regular.otf") format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Berylium';
+    src: url("fonts/Berylium.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Libre';
+    src: url("fonts/LibreBaskerville-Regular.otf") format('opentype');
+    font-weight:normal;
+    font-style:normal;
+}
+/*End Custom Fonts*/
+
+.container {
+	width: 2000px;
+    max-width:60rem;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #FFF;
+	padding-left: 80px;
+	padding-right: 80px;
+	box-sizing: border-box;
+}
+
+
+/********Header********/
+
+header {
+	padding-top: 20px;
+    margin:0;
+
+    /*padding-bottom: 20px;*/
+
+}
+
+header h1 {
+	margin: 20px 0;
+    padding-bottom: 10px;
+	font-weight: normal;
+	font-size: 300%;
+    font-family: 'Reey','Amatic-Bold', Arial, sans-serif;
+    word-spacing:10px;
+    letter-spacing: 2px;
+}
+
+.Alice_House_Header a {
+    color:rgba(12, 12, 12, 0.884);
+    text-decoration: none;
+}
+
+/*Site Navigation*/
+.site-nav {
+	margin-top: 20px;
+    padding:0;
+
+}
+
+.site-nav ul {
+	margin: 0;
+    padding:0;
+
+}
+
+.site-nav li {
+	list-style: none;
+    float: left;
+}
+
+.site-nav a {
+	display: block;
+    color: #ffffff;
+    text-decoration: none;
+	background-color: #202020e7;
+	/*how to center it?*/
+    padding:20px 15px; /*cell padding*/
+    font-size: 90%;
+    border-bottom: none;
+    font-family: 'Berylium', Arial, sans-serif;
+}
+
+.site-nav li:hover > a,
+.site-nav a:hover {
+	background-color: rgb(228, 166, 74);
+	color: #202020e7;
+}
+
+/*Sub Menu*/
+.site-nav li ul {
+    position: absolute;
+	left: -9999px;
+    margin: 0;
+    padding:0;
+	/*background-color: #e5e9dc;*/
+	box-shadow: 7px 7px 7px -7px rgba(0, 0, 0, .6);
+	z-index: 9999;
+}
+
+.site-nav li:hover ul {
+	left: auto;
+}
+
+.site-nav li li {
+	float: none;
+	margin-right: 0;
+}
+
+.site-nav li li a:hover {
+	background-color: rgb(228, 166, 74);
+	color: #202020e7;
+}
+
+
+/********Content Area********/
+
+.content-area {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+/*Banner Overlay*/
+.image-banner {
+
+    position:relative;
+    margin:0;
+    padding:0;
+}
+
+.welcome-image {
+
+   /* display:grid;*/
+    max-width: 100%;
+    height:auto;
+}
+
+.Alice-Introduction {
+
+    position:absolute;
+    top:14%;
+    left:10%;
+    width: 80%;
+    color:#202020e7;
+    text-align: left;
+    background-color:rgba(255, 255, 255,.6);
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+
+}
+
+.Alice-Introduction h3{
+    font-size: 180%;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.Alice-Introduction p{
+    font-size: 100%;
+    box-sizing: border-box;
+    padding-left: 40px;
+	padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.fix {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+
+
+/*Webpage of CONNECT
+---------------------------
+Contact Image
+Sidebar 
+Form
+---------------------------
+*/
+
+
+.GetInTouch {
+    max-width: 2000px;
+    height:500px;
+    background-color: #FFF;
+    margin: 30px auto 0 auto;
+    line-height: 1.65;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.Main-GetInTouch {
+    padding:0;
+    margin-right:40px;
+    flex: 2;
+    order: 1;
+}
+
+
+.Sidebar-GetInTouch {
+    flex:1;
+    order:2;
+    border-top: 2px solid rgb(49, 49, 49);
+ 
+}
+
+.Sidebar-GetInTouch h2 {
+    font-size: 130%;
+ 
+}
+
+.Sidebar-GetInTouch p {
+    text-align: justify;
+    font-size: 90%;
+}
+
+form {
+    background-color:rgba(0, 0, 0, 0.062);
+    padding:30px 40px;
+}
+
+.Form-row {
+    padding: 10px 0px;
+    display: flex;
+}
+
+
+.Form-row label {
+    padding-right: 10px;
+    font-size: 90%;
+
+}
+
+.Form-row label span {
+    color:red;
+}
+
+
+input {
+    font-size:90%;
+    outline:none;
+}
+
+input[type="Name"],
+input[type="email"] {
+    display:block;
+    width:100%;
+    box-sizing: boarder-box;
+    padding:0 10px;
+    height:30px;
+    border: 1px solid #CDCDCD;
+}
+
+input[type="Name"]:focus
+input[type="email"]:focus {
+    border: 1px solid rgb(71, 71, 71);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,.2);  /*2px blur*/
+
+}
+
+
+input[type="submit"] {
+    font-family: 'Libre',  sans-serif;
+    width:20%;
+    display: block;
+    box-sizing:border-box;
+    color:#202020e7;
+    background-color:  rgb(245, 194, 119);
+    padding:10px 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin:10px 0;
+    outline:none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid white;
+    background-color:rgb(245, 156, 22);
+}
+
+textarea {
+    width:400px;
+    height:150px;
+    display:block;
+    border: 1px solid #CDCDCD;
+
+    outline:none;
+}
+
+
+
+/*Footer Navigation*/
+footer {
+    text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+.footer-nav {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.footer-nav ul{
+    margin:0;
+    padding: 1px 0px;
+}
+
+.footer-nav li {
+   list-style: none; 
+   float:left ;
+   margin-right: 5px;
+}
+
+.footer-nav a {
+    display: block;
+    color:rgba(12, 12, 12, 0.747) ;
+    font-size:90%;
+    text-decoration: none;
+    padding:10px 20px;
+    /*border: 1px solid rgb(240, 184, 101) ;*/
+}
+
+.footer-nav a:hover {
+    color: rgb(228, 166, 74) ;
+}
+
+.footer p {
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.copyright {
+    font-size: 85%;
+    margin-top: 20px;
+    color:rgba(100, 100, 100, 0.39);
+}
+
+
+/********End Content Area********/
